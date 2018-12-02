@@ -12,7 +12,11 @@
 */
 
 //Rota de controlede de Manutencao
-Route::get('/', 'ManutencaoController@areaGeral')->name('geral');
+Route::get('/', function(){
+	return view('principal');
+})->name('principal');
+
+Route::get('/manutencao', 'ManutencaoController@areaGeral')->name('geral');
 Route::get('/manutencao/incluir', 'ManutencaoController@incluir')->name('incluirManutencao');
 Route::post('/manutencao/incluirValidar', 'ManutencaoController@incluirValidar')->name('incluirManutencaoValidar');
 

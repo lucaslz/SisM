@@ -37,7 +37,7 @@ class EquipamentoController extends Controller
 
         $return = Equipamento::create($request->except('_token'));
     	return redirect()
-            ->route('incluirEquipamento')
+            ->route('relatorioEquipamentosCadastrados')
             ->with('success', "Produto Inserido com Sucesso !!!");
     }
 

@@ -12,17 +12,20 @@
 </head>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-info" style="background-color: #63B8FF;">
-        <a class="navbar-brand" href="{{ route('geral') }}">{{ config('app.name') }}</a>
+        <a class="navbar-brand" href="{{ route('principal') }}">{{ config('app.name') }}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarManutencao" aria-controls="navBarManutencao" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('geral') }}">Geral</a>
+                <a class="nav-link" href="{{ route('principal') }}">Página Principal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('geral') }}">Área Geral</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Administrador
+                    Área do Administrador
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="{{ route('incluirEquipamento') }}">Incluir Equipamento</a>
